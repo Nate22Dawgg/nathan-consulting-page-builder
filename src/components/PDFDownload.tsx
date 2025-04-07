@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { download } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const PDFDownload = () => {
   // In a real implementation, the PDF URL would be dynamic or stored in a CMS
@@ -16,7 +16,7 @@ const PDFDownload = () => {
           approach, and how I can help your biotech organization optimize operations.
         </p>
         <Button className="bg-white text-consulting-800 hover:bg-consulting-100 flex items-center gap-2">
-          <download className="h-5 w-5" />
+          <Download className="h-5 w-5" />
           Download My 1-Page Deck
         </Button>
       </div>

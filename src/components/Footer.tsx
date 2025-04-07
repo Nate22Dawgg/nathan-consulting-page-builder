@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center space-x-2">
-            <mail className="h-4 w-4 text-consulting-300" />
+            <Mail className="h-4 w-4 text-consulting-300" />
             <a href="mailto:contact@example.com" className="text-sm text-consulting-300 hover:text-white transition-colors">
               contact@example.com
             </a>
