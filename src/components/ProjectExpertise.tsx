@@ -21,7 +21,7 @@ const ProjectExpertise = () => {
       title: "Viral Vector & AAV Platforms",
       items: [
         "Implemented upstream/downstream protocols for rAAV and lentiviral vector delivery systems",
-        "Increased vector titer and packaging efficiency through process innovation and smart QC systems"
+        "Increased viral vector potency by supporting codon optimization algorithm development and by developing cell-based functional assays to streamline candidate selection"
       ]
     },
     {
