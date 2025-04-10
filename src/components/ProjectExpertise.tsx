@@ -44,16 +44,16 @@ const ProjectExpertise = () => {
   ];
 
   return (
-    <section className="py-16 bg-consulting-50" id="project-expertise">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-consulting-800 mb-8">Project Expertise</h2>
-        <div className="space-y-10 max-w-4xl">
+    <section className="py-16 bg-card" id="project-expertise">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold text-white mb-8">Project Expertise</h2>
+        <div className="space-y-10 max-w-4xl mx-auto">
           {expertise.map((category, index) => (
-            <div key={index}>
-              <h3 className="text-xl font-semibold text-consulting-700 mb-4">{category.title}</h3>
-              <ul className="list-disc pl-6 space-y-2">
+            <div key={index} className="text-left">
+              <h3 className="text-xl font-semibold text-white mb-4 text-center">{category.title}</h3>
+              <ul className="list-disc pl-6 space-y-2 inline-block mx-auto">
                 {category.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="text-consulting-600">{item}</li>
+                  <li key={itemIndex} className="text-gray-300">{item}</li>
                 ))}
               </ul>
             </div>

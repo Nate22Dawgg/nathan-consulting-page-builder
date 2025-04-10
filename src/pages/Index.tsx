@@ -11,11 +11,12 @@ import Entrepreneurship from "@/components/Entrepreneurship";
 import Publications from "@/components/Publications";
 import Education from "@/components/Education";
 import ContactForm from "@/components/ContactForm";
+import PDFDownload from "@/components/PDFDownload";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
       
       <main className="flex-grow">
@@ -28,6 +29,7 @@ const Index = () => {
         <Entrepreneurship />
         <Publications />
         <Education />
+        <PDFDownload />
         <ContactForm />
       </main>
       

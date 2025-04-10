@@ -12,13 +12,13 @@ const Publications = () => {
   ];
 
   return (
-    <section className="py-16 bg-consulting-50" id="publications">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-consulting-800 mb-8">Publications</h2>
-        <div className="max-w-4xl">
-          <ul className="space-y-4">
+    <section className="py-16 bg-card" id="publications">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold text-white mb-8">Publications</h2>
+        <div className="max-w-4xl mx-auto">
+          <ul className="space-y-4 inline-block text-left">
             {publications.map((publication, index) => (
-              <li key={index} className="text-consulting-600">{publication}</li>
+              <li key={index} className="text-gray-300">{publication}</li>
             ))}
           </ul>
         </div>
