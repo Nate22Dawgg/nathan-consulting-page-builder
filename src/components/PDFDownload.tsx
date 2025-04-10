@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Download } from 'lucide-react';
 
 const PDFDownload = () => {
-  // In a real implementation, the PDF URL would be dynamic or stored in a CMS
-  const pdfUrl = '#'; // Placeholder URL
+  // Link to the Google Drive PDF file
+  const pdfUrl = "https://drive.google.com/file/d/1XBF7hNsqdEXg4d2VOJ2V3brXUfMTjjS8/view?usp=sharing";
   
   return (
     <section className="bg-black text-white py-12" id="download">
@@ -15,10 +15,17 @@ const PDFDownload = () => {
           Download my one-page deck for a comprehensive overview of my services, 
           approach, and how I can help your biotech organization optimize operations.
         </p>
-        <Button className="bg-accent hover:bg-accent/90 text-white flex items-center gap-2 mx-auto">
-          <Download className="h-5 w-5" />
-          Download My 1-Page Deck
-        </Button>
+        <a 
+          href={pdfUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block"
+        >
+          <Button className="bg-accent hover:bg-accent/90 text-white flex items-center gap-2">
+            <Download className="h-5 w-5" />
+            📄 Download My 1-Page Deck
+          </Button>
+        </a>
       </div>
     </section>
   );
