@@ -13,7 +13,7 @@ const ProjectExpertise = () => {
     {
       title: "Process Design & Scale-Up",
       items: [
-        "Developed a scalable AAV production protocol enabling 3x throughput with no additional headcount",
+        "Quality by design and Design of Experiment (DoE) principles applied in SuperPro designer to model large-scale biomanufacturing platforms",
         "Led lab buildouts and system integrations to support GMP-aligned workflows"
       ]
     },
