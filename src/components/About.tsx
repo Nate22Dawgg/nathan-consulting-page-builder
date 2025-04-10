@@ -9,7 +9,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-300 leading-relaxed">
             I'm Nathan—a scientist-turned-operator with a love for fixing messy systems and helping teams do better work. 
-            I've worked in R&D, biomanufacturing, and clinical ops, and I thrive at the intersection of data, process, and people.
+            I've worked in R&D, biomanufacturing, and frontline teams, and I thrive at the intersection of data, process, and people.
           </p>
         </div>
       </div>
