@@ -27,7 +27,6 @@ const ProjectExpertise = () => {
     {
       title: "Data & Infrastructure",
       items: [
-        "Built custom dashboards reducing reporting cycles from days to hours",
         "At Erevna, developed clinical trial analytics pipelines by synthesizing trial and site data from ClinicalTrials.gov to identify Phase III digital trial opportunities",
         "Built pharma evaluation dashboards to support strategic positioning and outreach with insights on therapeutic area trends, trial density, and investigator networks"
       ]
