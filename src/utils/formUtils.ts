@@ -1,20 +1,25 @@
-
 import { toast } from "sonner";
+import { supabase } from '@/supabase/supabaseClient';
 
-export const submitContactForm = async (data: { 
-  name: string; 
-  email: string; 
-  message: string; 
+export const submitContactForm = async (data: {
+  name: string;
+  email: string;
+  message: string;
 }) => {
-  console.log("Form data:", data);
-  
-  // This is a placeholder for the actual form submission
-  // In a real implementation, this would connect to a backend API
-  return new Promise((resolve) => {
-    // Simulate API call
-    setTimeout(() => {
-      toast.success("Form submitted successfully! We'll be in touch soon.");
-      resolve({ success: true });
-    }, 1000);
-  });
+  try {
+    const { error } = await supabase.from('contact_messages').insert([data]);
+
+    if (error) {
+      console.error('Supabase error:', error);
+      toast.error("There was an issue submitting the form. Please try again.");
+      throw error;
+    }
+
+    toast.success("Form submitted successfully! We'll be in touch soon.");
+    return { success: true };
+  } catch (err) {
+    console.error('Unexpected error:', err);
+    toast.error("Something went wrong. Please try again.");
+    throw err;
+  }
 };
