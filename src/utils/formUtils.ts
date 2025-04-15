@@ -1,5 +1,6 @@
+
 import { toast } from "sonner";
-import { supabase } from '@/supabase/supabaseClient';
+import { supabase } from '@/integrations/supabase/client';
 
 export const submitContactForm = async (data: {
   name: string;
