@@ -7,8 +7,10 @@ const Now = () => {
         <h2 className="text-3xl font-bold text-white mb-6">Now</h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-300 leading-relaxed">
-            I'm currently applying to biopharma PM and analyst roles, as well as discovery and translational benchside positions. 
-            You can also visit my innovation platform to see projects and MVPs currently in production or deployed (link coming soon).
+            Currently evaluating select opportunities in biopharma leadership, strategic analytics, and translational research positions 
+            where my unique systems expertise can drive exponential value. My innovation platform showcases enterprise-grade 
+            solutions and high-impact MVPs that demonstrate my execution capabilities across the biotech value chain.
+            <span className="text-accent italic"> (Portfolio link forthcoming)</span>
           </p>
         </div>
       </div>
