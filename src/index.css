@@ -100,9 +100,7 @@
     z-index: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(120deg, #0f172a 0%, #06b6d4 100%);
-    background-size: 200% 200%;
-    animation: gradientMove 8s ease-in-out infinite;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     overflow: hidden;
   }
 
@@ -116,44 +114,72 @@
     opacity: 0.7;
   }
 
-  @keyframes gradientMove {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-
   .floating-blob {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.18;
-    filter: blur(16px);
+    filter: blur(40px);
     pointer-events: none;
-    animation: floatBlob 12s ease-in-out infinite alternate;
+    mix-blend-mode: screen;
+    animation: floatBlob 30s ease-in-out infinite alternate;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.2), 0 0 30px rgba(0, 0, 0, 0.3);
   }
+  
   .floating-blob-1 {
-    width: 320px; height: 320px; left: 5vw; top: 10vh; background: #06b6d4;
-    animation-delay: 0s;
+    width: 300px; height: 300px; left: 8vw; top: 15vh; 
+    background: radial-gradient(circle at center, rgba(6, 182, 212, 0.8) 0%, rgba(6, 182, 212, 0) 70%);
+    animation-duration: 25s;
+    animation-delay: -2s;
   }
+  
   .floating-blob-2 {
-    width: 220px; height: 220px; right: 10vw; top: 30vh; background: #3b82f6;
-    animation-delay: 2s;
+    width: 250px; height: 250px; right: 15vw; top: 20vh; 
+    background: radial-gradient(circle at center, rgba(59, 130, 246, 0.8) 0%, rgba(59, 130, 246, 0) 70%);
+    animation-duration: 30s;
+    animation-delay: -5s;
   }
+  
   .floating-blob-3 {
-    width: 180px; height: 180px; left: 40vw; bottom: 8vh; background: #a21caf;
-    animation-delay: 4s;
+    width: 280px; height: 280px; left: 35vw; bottom: 15vh; 
+    background: radial-gradient(circle at center, rgba(162, 28, 175, 0.8) 0%, rgba(162, 28, 175, 0) 70%);
+    animation-duration: 22s;
+    animation-delay: -9s;
   }
+  
   .floating-blob-4 {
-    width: 140px; height: 140px; right: 20vw; bottom: 12vh; background: #f59e42;
-    animation-delay: 6s;
+    width: 200px; height: 200px; right: 25vw; bottom: 20vh; 
+    background: radial-gradient(circle at center, rgba(245, 158, 66, 0.8) 0%, rgba(245, 158, 66, 0) 70%);
+    animation-duration: 28s;
+    animation-delay: -15s;
   }
+  
   .floating-blob-5 {
-    width: 100px; height: 100px; left: 60vw; top: 5vh; background: #22d3ee;
-    animation-delay: 8s;
+    width: 150px; height: 150px; left: 55vw; top: 12vh; 
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.8) 0%, rgba(34, 211, 238, 0) 70%);
+    animation-duration: 20s;
+    animation-delay: -8s;
   }
 
   @keyframes floatBlob {
-    0% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-40px) scale(1.08); }
-    100% { transform: translateY(0) scale(1); }
+    0% { 
+      transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+      opacity: 0.5;
+    }
+    25% {
+      transform: translateY(-50px) translateX(20px) scale(1.1) rotate(2deg);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-30px) translateX(-20px) scale(0.9) rotate(-1deg);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translateY(40px) translateX(-40px) scale(1.05) rotate(1deg);
+      opacity: 0.4;
+    }
+    100% { 
+      transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+      opacity: 0.5;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -181,7 +207,7 @@
     background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(16px) saturate(180%);
     border-radius: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: none;
     box-shadow: 0 4px 32px 0 rgba(16, 16, 32, 0.12);
     margin-bottom: 2.5rem;
     position: relative;
@@ -216,5 +242,11 @@
   .glow {
     box-shadow: 0 0 24px 4px #06b6d4, 0 0 64px 8px #3b82f6;
     border-radius: 1.5rem;
+  }
+
+  /* Center single grid items in portfolio sections */
+  .centered-grid {
+    display: grid;
+    justify-content: center;
   }
 }
