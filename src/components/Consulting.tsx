@@ -1,25 +1,38 @@
-
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+
+const consultingProjects = [
+  {
+    title: 'Erevna',
+    description: 'Supported a stealth-mode biotech SaaS startup with landscape analysis, clinical trial sourcing, and early traction strategy',
+    items: [
+      'Helped identify market-fit by mapping Phase III trial opportunities for digital enablement',
+      'Developed strategic analytics dashboards for internal operations and investor positioning',
+    ],
+  },
+];
 
 const Consulting = () => {
   return (
-    <section className="py-16 bg-card" id="consulting">
+    <section className="py-16 glow" id="consulting">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-8">Consulting & Strategic Ops</h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="text-left">
-            <h3 className="text-xl font-semibold text-white mb-2 text-center">
-              Erevna — Supported a stealth-mode biotech SaaS startup with landscape analysis, clinical trial sourcing, and early traction strategy
-            </h3>
-            <ul className="list-disc pl-6 space-y-2 inline-block mx-auto">
-              <li className="text-gray-300">
-                Helped identify market-fit by mapping Phase III trial opportunities for digital enablement
-              </li>
-              <li className="text-gray-300">
-                Developed strategic analytics dashboards for internal operations and investor positioning
-              </li>
-            </ul>
-          </div>
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {consultingProjects.map((project, idx) => (
+            <Card key={idx} className="transition-transform duration-200 hover:scale-105 hover:shadow-2xl bg-card/80 border-accent/30">
+              <CardHeader>
+                <CardTitle className="text-lg text-white text-center mb-2">{project.title}</CardTitle>
+                <div className="text-gray-400 text-sm text-center mb-2">{project.description}</div>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-4 space-y-2 text-left">
+                  {project.items.map((item, itemIdx) => (
+                    <li key={itemIdx} className="text-gray-300 text-sm">{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
