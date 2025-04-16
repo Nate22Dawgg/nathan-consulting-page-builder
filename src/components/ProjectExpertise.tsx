@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const ProjectExpertise = () => {
   const expertise = [
@@ -43,19 +43,23 @@ const ProjectExpertise = () => {
   ];
 
   return (
-    <section className="py-16 bg-card" id="project-expertise">
+    <section className="py-16 glow" id="project-expertise">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-8">Project Expertise</h2>
-        <div className="space-y-10 max-w-4xl mx-auto">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {expertise.map((category, index) => (
-            <div key={index} className="text-left">
-              <h3 className="text-xl font-semibold text-white mb-4 text-center">{category.title}</h3>
-              <ul className="list-disc pl-6 space-y-2 inline-block mx-auto">
-                {category.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="text-gray-300">{item}</li>
-                ))}
-              </ul>
-            </div>
+            <Card key={index} className="transition-transform duration-200 hover:scale-105 hover:shadow-2xl bg-card/80 border-accent/30">
+              <CardHeader>
+                <CardTitle className="text-lg text-white text-center mb-2">{category.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-4 space-y-2 text-left">
+                  {category.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="text-gray-300 text-sm">{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-16 bg-background" id="about">
+    <section className="py-16 glow" id="about">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">About</h2>
         <div className="max-w-3xl mx-auto">

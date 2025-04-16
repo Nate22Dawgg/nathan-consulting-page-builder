@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const Education = () => {
   return (
-    <section className="py-16 bg-background" id="education">
+    <section className="py-16 glow" id="education">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-8">Education & MBA Core</h2>
         <div className="max-w-4xl mx-auto">

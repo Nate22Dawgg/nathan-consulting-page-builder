@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,7 +35,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-white" id="contact">
+    <section className="py-16 glow" id="contact">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-8">Let's Talk</h2>
         <Card className="max-w-md mx-auto">

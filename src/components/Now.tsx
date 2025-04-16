@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const Now = () => {
   return (
-    <section className="py-16 bg-card" id="now">
+    <section className="py-16 glow" id="now">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Now</h2>
         <div className="max-w-3xl mx-auto">

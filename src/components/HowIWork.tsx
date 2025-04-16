@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
@@ -13,7 +12,7 @@ const HowIWork = () => {
   ];
 
   return (
-    <section className="py-16 bg-background" id="how-i-work">
+    <section className="py-16 glow" id="how-i-work">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">How I Work</h2>
         <div className="max-w-3xl mx-auto">
