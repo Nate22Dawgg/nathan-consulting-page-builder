@@ -20,11 +20,11 @@ const Header = () => {
         </div>
         <div className="flex flex-col items-center justify-center py-16 md:py-24">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-[0_2px_24px_rgba(6,182,212,0.25)]">
-            Builder. Strategist. Biotech Generalist.
+            Architect. Innovator. Biotech Catalyst.
           </h2>
           <p className="text-xl text-gray-300 max-w-xl mx-auto drop-shadow-[0_1px_8px_rgba(6,182,212,0.12)]">
-            Helping biotech organizations streamline operations, implement effective systems, 
-            and scale efficiently through strategic consulting and tailored solutions.
+            Transforming biotech organizations through precision systems engineering, 
+            accelerating growth, and unlocking operational excellence that drives measurable ROI.
           </p>
         </div>
       </div>

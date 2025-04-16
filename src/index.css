@@ -247,6 +247,15 @@
   /* Center single grid items in portfolio sections */
   .centered-grid {
     display: grid;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+  }
+
+  /* Adjust grid items on different screen sizes */
+  @media (min-width: 768px) {
+    .centered-grid > * {
+      max-width: 400px;
+      margin: 0 auto;
+    }
   }
 }

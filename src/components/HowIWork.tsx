@@ -3,12 +3,12 @@ import { Check } from 'lucide-react';
 
 const HowIWork = () => {
   const workApproach = [
-    "Map & optimize workflows to uncover hidden efficiencies",
-    "Eliminate bottlenecks and reduce processing time",
-    "Scale systems that grow with your team, not against it",
-    "Select and integrate tech that supports real work",
-    "Train teams with empathy and clarity",
-    "Build custom dashboards that turn data into decisions"
+    "Architect high-performance workflows that unlock 30-50% efficiency gains",
+    "Eliminate critical bottlenecks to accelerate time-to-market by months",
+    "Engineer scalable systems that drive sustainable growth and reduce operational friction",
+    "Curate and deploy mission-critical technology that delivers quantifiable ROI",
+    "Transform teams through evidence-based training protocols that maximize adoption",
+    "Construct decision intelligence dashboards that convert complex data into strategic advantage"
   ];
 
   return (
