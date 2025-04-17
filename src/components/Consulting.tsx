@@ -3,10 +3,10 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const consultingProjects = [
   {
-    title: 'Erevna',
+    title: 'Stealth Mode Biotech SaaS',
     description: 'Supported a stealth-mode biotech SaaS startup with landscape analysis, clinical trial sourcing, and early traction strategy',
     items: [
-      'Helped identify market-fit by mapping Phase III trial opportunities for digital enablement',
+      'Helped identify market-fit by mapping clinicaltrial opportunities for digital enablement',
       'Developed strategic analytics dashboards for internal operations and investor positioning',
     ],
   },
