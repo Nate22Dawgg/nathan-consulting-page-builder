@@ -14,7 +14,7 @@ const Publications = () => {
   return (
     <section className="py-16 glow" id="publications">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-white mb-8">Publications</h2>
+        <h2 className="text-3xl font-bold text-white mb-8">Papers & Presentations</h2>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {publications.map((publication, idx) => (
             <Card key={idx} className="transition-transform duration-200 hover:scale-105 hover:shadow-2xl bg-card/80 border-accent/30">

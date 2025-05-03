@@ -9,8 +9,8 @@ const Now = () => {
           <p className="text-lg text-gray-300 leading-relaxed">
             Currently evaluating select opportunities in biopharma leadership, strategic analytics, and translational research positions 
             where my unique systems expertise can drive exponential value. My innovation platform showcases enterprise-grade 
-            solutions and high-impact MVPs that demonstrate my execution capabilities across the biotech value chain.
-            <span className="text-accent italic"> (Portfolio link forthcoming)</span>
+            solutions and high-impact MVPs that demonstrate my execution capabilities across the biotech value chain:
+            <span className="text-accent italic"> https://www.innovationcenter.dev/</span>
           </p>
         </div>
       </div>
