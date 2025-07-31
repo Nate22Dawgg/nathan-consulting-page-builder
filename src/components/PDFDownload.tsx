@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Download } from 'lucide-react';
 
 const PDFDownload = () => {
-  // Link to the Google Drive PDF file
-  const pdfUrl = "https://drive.google.com/file/d/1XBF7hNsqdEXg4d2VOJ2V3brXUfMTjjS8/view?usp=sharing";
+  // Link to the Google Docs one-page deck
+  const pdfUrl = "https://docs.google.com/document/d/1TS9Nst5x_txVT-IPsfQvQhCmFjD5MXg1j0L4Ty-V4vg/edit?usp=sharing";
   
   return (
     <section className="bg-black text-white py-12" id="download">
